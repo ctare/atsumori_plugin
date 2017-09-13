@@ -5,9 +5,10 @@
   "description": "test",
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/*"],
-      "js": ["jquery-2.1.4.min.js", "atumori.js"],
-      "run_at": "document_idle"
+      "matches": ["https://www.youtube.com/*", "http://www.nicovideo.jp/*"],
+      "js": ["jquery-2.1.4.min.js", "atumori.js", "socket.io.js"],
+      "run_at": "document_idle",
+      "web_accessible_resources": ["atsumori.png"]
     }
   ]
 }
